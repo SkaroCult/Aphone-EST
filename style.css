@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Dosis:wght@400;700&display=swap');
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    text-align: justify;
+    scroll-behavior: smooth;
+    font-family: 'Dosis', sans-serif;
+}
+
+/*Code*/
+body{
+    background-image: linear-gradient(90deg, rgb(126, 126, 247), rgb(63, 54, 248), rgb(80, 59, 156), rgb(74, 15, 235));
+    background-size: 500%, 100%;
+    animation: back 5s infinite alternate;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cabeca a{
+    display: flex;
+    align-items: center;
+}
+h1{
+    font-size: 30px;
+    font-family: 'Dela Gothic One', cursive;
+}
+main header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    scroll-behavior: smooth;
+}
+main header h2{
+    font-size: 60px;
+    margin: 20px;
+    font-family: 'Dela Gothic One', cursive;
+}
+main header .side a{
+    font-size: 30px;
+    background-image: linear-gradient(90deg, rgb(0, 119, 255), rgb(35, 44, 117) , rgb(68, 0, 255) );
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    transition: padding 1s;
+    
+}
+main header .side a:hover{
+    padding: 15px
+}
+.cont{
+    width: 30%;
+    border-radius: 7px;
+    filter: drop-shadow(16px 6px 20px rgb(91, 28, 240));
+    animation: img 10s infinite alternate;
+}
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+#sobre #sobred{
+    font-size: 50px;
+    width: 70%;
+}
+#sobre #de{
+    margin: 20px;
+    font-size: 30px;
+    width: 70%;
+    opacity: 0.6;
+}
+strong{
+    color: blueviolet;
+    font-size: 55px;
+    filter: drop-shadow(0.5px 0.5px 5px rgb(212, 0, 255));
+}
+section.left{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px;
+}
+section .side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section .side h3{
+    font-size: 40px;
+    color: rgb(55, 9, 107);
+    font-family: 'Dela Gothic One', cursive;
+}
+section .side p{
+    font-size: 20px;
+    width: 70%;
+    margin: 15px;
+}
+section.right{
+    display: flex;
+    justify-content: space-evenly;
+}
+section.right .side{
+    width: 40%;
+}
+section.right .side p{
+    width: 100%;
+}
+footer{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px;
+}
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+footer .logo h4{
+    font-size: 30px;
+    font-family: 'Dela Gothic One', cursive;
+}
+footer .lado h5{
+    font-size: 40px;
+    color: rgb(160, 77, 255);
+    font-family: 'Dela Gothic One', cursive;
+}
+footer .lado p{
+    font-size: 30px;
+}
+
+/*Scroll*/
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: rgb(0, 1, 71);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(86, 3, 119);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(153, 57, 231);
+}
+
+/*Animation*/
+@keyframes back{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+@keyframes img {
+    0%{
+        filter: drop-shadow(-16px -16px 20px rgb(91, 28, 240));
+    }
+    25%{
+        filter: drop-shadow(-16px 16px 20px rgb(214, 33, 160));
+    }
+    75%{
+        filter: drop-shadow(16px 16px 20px rgb(163, 4, 31));
+    }
+    100%{
+        filter: drop-shadow(16px -16px 20px rgb(26, 3, 92));
+    }
+}
